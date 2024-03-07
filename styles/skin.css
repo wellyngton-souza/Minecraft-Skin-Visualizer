@@ -1,0 +1,250 @@
+#myskin{
+    width: 8rem;
+    height: 16rem;
+    transform-style: preserve-3d;
+}
+
+#myskin > *{
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+#myskin > div > *{
+    position: absolute;
+    background-image: url("../assets/SkinMC-799fa029-a275-40fc-83cd-39df1c8a8e95.png");
+    image-rendering: pixelated;
+}
+
+.head > *{
+    background-size: 800%;
+}
+
+.body > *{
+    background-size: 800%;
+}
+
+.arm-left > *, .arm-right > *, .leg-left > *, .leg-right > *{
+    background-size: 1600%;
+}
+
+:root{
+    --sizeHead: 8rem;
+    --sizeNegativeHead: -8rem;
+    --sizeBody: 8rem;
+    --sizeNegativeBody: -8rem;
+    --sizeArm: 12rem;
+    --sizeNegativeArm: -12rem;
+    --sizeLateral: 4rem;
+}
+
+.head{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: translateY(calc(var(--sizeBody) * -1));
+}
+
+.body{
+    width: var(--sizeBody);
+    height: var(--sizeBody);
+}
+
+.arm-left{
+    width: var(--sizeArm);
+    height: var(--sizeArm);
+
+    transform: translateX(calc(var(--sizeBody)));
+}
+
+.arm-right{
+    width: var(--sizeArm);
+    height: var(--sizeArm);
+
+    transform: translateX(calc(var(--sizeBody) * -0.5));
+}
+
+.leg-left{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: translateX(calc(var(--sizeBody) / 2)) translateY(var(--sizeArm));
+}
+
+.leg-right{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: translateY(var(--sizeArm));
+}
+
+.head .top{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeHead) / 2));
+    background-color: yellow;
+    background-position: -100% 0%;
+}
+
+.head .left{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateY(90deg) translateZ(calc(var(--sizeHead) / 2));
+    background-color: gray;
+    background-position: -200% -100%;
+}
+
+.head .front{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeHead) / 2));
+    background-color: orange;
+    background-position: -100% -100%;
+}
+
+.head .back{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeNegativeHead) / 2)) scaleX(-1);
+    background-color: pink;
+    background-position: -300% -100%;
+}
+
+.head .right{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateY(-90deg) translateZ(calc(var(--sizeHead) / 2));
+    background-color: blue;
+    background-position: 0% -100%;
+}
+
+.head .bottom{
+    width: var(--sizeHead);
+    height: var(--sizeHead);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeNegativeHead) / 2));
+    background-color: red;
+    background-position: -200% 0%;
+}
+
+.body .top{
+    width: var(--sizeBody);
+    height: var(--sizeLateral);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: yellow;
+}
+
+.body .left{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateY(90deg) translateZ(calc(var(--sizeBody) * 0.75));
+    background-color: gray;
+}
+
+.body .front{
+    width: var(--sizeBody);
+    height: var(--sizeArm);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: orange;
+    background-position: -320px -320px;
+}
+
+.body .back{
+    width: var(--sizeBody);
+    height: var(--sizeArm);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeLateral) / -2)) scaleX(-1);
+    background-color: pink;
+    background-position: -515px -320px;
+}
+
+.body .right{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateY(-90deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: blue;
+}
+
+.body .bottom{
+    width: var(--sizeBody);
+    height: var(--sizeLateral);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeArm) * -0.832));
+    background-color: red;
+}
+
+.arm-left .top, .arm-right .top, .leg-left .top, .leg-right .top{
+    width: var(--sizeLateral);
+    height: var(--sizeLateral);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: yellow;
+}
+
+.arm-left .left, .arm-right .left, .leg-left .left, .leg-right .left{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateY(90deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: gray;
+}
+
+.arm-left .front, .arm-right .front, .leg-left .front, .leg-right .front{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: orange;
+}
+
+.arm-left .back, .arm-right .back, .leg-left .back, .leg-right .back{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateX(0deg) translateZ(calc(var(--sizeLateral) / -2)) scaleX(-1);
+    background-color: pink;
+}
+
+.arm-left .right, .arm-right .right, .leg-left .right, .leg-right .right{
+    width: var(--sizeLateral);
+    height: var(--sizeArm);
+
+    transform: rotateY(-90deg) translateZ(calc(var(--sizeLateral) / 2));
+    background-color: blue;
+}
+
+.arm-left .bottom, .arm-right .bottom, .leg-left .bottom, .leg-right .bottom{
+    width: var(--sizeLateral);
+    height: var(--sizeLateral);
+
+    transform: rotateX(90deg) translateZ(calc(var(--sizeLateral) * -2.5));
+    background-color: red;
+}
+
+.arm-left .front{
+    background-position: -580px -832px;
+}
+
+.arm-left .left{
+    background-position: -608px -832px;
+}
+
+.arm-left .back{
+    background-position: -670px -832px;
+}
+
+.arm-left .top{
+    background-position: -578px -770px;
+}
+
+.arm-left .bottom{
+    background-position: -608px -770px;
+}
