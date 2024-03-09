@@ -248,3 +248,63 @@
 .arm-left .bottom{
     background-position: -608px -770px;
 }
+
+.arm-right .top{
+    background-position: -704px -260px;
+}
+
+.arm-right .front{
+    background-position: -700px -320px;
+}
+
+.arm-right .right{
+    background-position: -640px -320px;
+}
+
+.arm-right .back{
+    background-position: -800px -320px;
+}
+
+.arm-right .bottom{
+    background-position: -733px -257px;
+}
+
+.leg-left .top{
+    background-position: -578px -770px;
+}
+
+.leg-left .front{
+    background-position: -320px -832px;
+}
+
+.leg-left .left{
+    background-position: -400px -832px;
+}
+
+.leg-left .back{    
+    background-position: -448px -832px;
+}
+
+.leg-left .bottom{
+    background-position: -384px -768px;
+}
+
+.leg-right .top{
+    background-position: -65px -260px;
+}
+
+.leg-right .front{
+    background-position: -65px -320px;
+}
+
+.leg-right .right{
+    background-position: 0px -320px;
+}
+
+.leg-right .back{
+    background-position: -192px -320px;
+}
+
+.leg-right .bottom{
+    background-position: -128px -255px;
+}

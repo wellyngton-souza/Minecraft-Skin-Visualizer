@@ -50,8 +50,25 @@ document.addEventListener("DOMContentLoaded", () =>{
 document.addEventListener("scroll", () =>{
     const angulo = window.scrollY;
 
-    const rotacionaElemento: NodeListOf<HTMLElement> = document.querySelectorAll(".element-myskin");
-    Array.from(rotacionaElemento).map((e) => {
-        e.style.transform = `rotateY(${angulo}deg)`;
-    });
+    const rotacionaElemento = document.getElementById("myskin") as HTMLElement;
+    rotacionaElemento.style.transform = `rotateY(${angulo}deg)`;
 });
+
+const trocarSkin = () =>{
+    const input = document.getElementById("imagemInput") as HTMLInputElement;
+    const pecasCorpo = document.querySelectorAll("#myskin > * > *");
+
+    if (input?.files && input?.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = () =>{
+            Array.from(pecasCorpo).map((e) =>{
+                if (e instanceof HTMLElement) {
+                    e.style.backgroundImage = `url(${reader.result})`;
+                }
+            });
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
