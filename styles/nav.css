@@ -1,7 +1,21 @@
 nav{
+    width: 100dvw;
     height: 4rem;
+
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    border-top: 4px solid green;
+
+    transition: all 0.5s;
+    background-color: whitesmoke;
+    z-index: 99;
     display: flex;
     align-items: center;
+}
+
+.bg-transparent{
+    top: -4rem;
 }
 
 nav ul{

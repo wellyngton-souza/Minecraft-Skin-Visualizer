@@ -72,3 +72,19 @@ const trocarSkin = () =>{
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+let lastScrollTop = 0;
+
+document.addEventListener("scroll", () => {
+    let navbar = document.getElementById("nav") as HTMLElement;
+
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+        navbar.classList.add("bg-transparent");
+    } else {
+        navbar.classList.remove("bg-transparent");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+});

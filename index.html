@@ -12,11 +12,11 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav">
             <ul>
-                <li>Desenvolvimento</li>
+                <li>Souza</li>
                 <div>
-                    <li>Contato</li>
+                    <li><a href="https://ayo.so/wellyngton">Contato</a></li>
                     <li>Informações</li>
                 </div>
             </ul>
@@ -27,7 +27,10 @@
             <div>
                 <h2>Minecraft Skin Visualizer</h2>
                 <p>Adicione sua Skin aqui</p>
-                <input type="file" onchange="trocarSkin()" id="imagemInput" name="imagem" accept="image/*">
+                <div class="file-input">
+                    <input type="file" onchange="trocarSkin()" id="imagemInput" name="imagem" accept="image/*">
+                    <button class="btn">Escolher arquivo</button>
+                </div>
             </div>
             <div class="myskinBox">
                 <div id="myskin" class="element-myskin">
@@ -84,9 +87,8 @@
         </article>
         <article class="content">
             <div>
-                <h2>Minecraft Skin Visualizer</h2>
-                <p>Adicione sua Skin aqui</p>
-                <button>Arquivos</button>
+                <h2>Sua skin em modelo 3d</h2>
+                <p>para fácil visualização</p>
             </div>
             <div class="myskinBox">
                 <div id="myskin" class="element-myskin myskin1">
@@ -143,9 +145,8 @@
         </article>
         <article class="content-2">
             <div>
-                <h2>Minecraft Skin Visualizer</h2>
-                <p>Adicione sua Skin aqui</p>
-                <button>Arquivos</button>
+                <h2>Em diferentes posições</h2>
+                <p>E entender melhor</p>
             </div>
             <div class="myskinBox">
                 <div id="myskin" class="element-myskin myskin2">

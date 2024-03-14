@@ -4,6 +4,10 @@
     transform-style: preserve-3d;
 }
 
+#myskin:hover{
+    cursor: move;
+}
+
 #myskin > *{
     position: absolute;
     transform-style: preserve-3d;
@@ -11,7 +15,7 @@
 
 #myskin > div > *{
     position: absolute;
-    background-image: url("../assets/SkinMC-799fa029-a275-40fc-83cd-39df1c8a8e95.png");
+    background-image: url("../assets/1330523.png");
     image-rendering: pixelated;
 }
 
